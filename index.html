@@ -1,7 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>The gateway to Yosemite</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<style>
+			.text {
+				color: white;
+				text-shadow: 2px 2px #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section  data-autoslide='5000' data-background-image='./images/1.JPG'>
+					<p class="text">Welcome</p>
+					<p class="text">to</p>
+					<p class="text">The gateway to Yosemite</p>
+				</section>
+				<section  data-autoslide='5000' data-background-image='./images/2.JPG'></section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				autoPlayMedia: false,
+				autoSlide: false,
+				autoSlideStoppable: true,
+				controls: true,
+				progress: false,
+				history: false,
+				center: true,
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+			});
+		</script>
+	</body>
 </html>
