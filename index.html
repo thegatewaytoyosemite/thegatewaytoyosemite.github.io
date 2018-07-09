@@ -7,65 +7,172 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 		<style>
+			.bottom-left {
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+				background-color: beige;
+				opacity: 0.7;
+				border: solid white;
+				color: black;
+				text-shadow:  2px 2px red;
+				text-align: left;
+			}
+			.bottom-right {
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+				background-color: beige;
+				opacity: 0.7;
+				border: solid white;
+				color: black;
+				text-shadow:  2px 2px red;
+				text-align: right;
+			}
 			.text-white {
 				color: white;
-				text-shadow: 2px 2px #000;
+				text-shadow: 2px 2px black;
 			}
 			.text-yellow {
 				color: yellow;
 				text-shadow: 2px 2px #000;
-			}			
+			}	
+
+			.portrait-mode {
+				visibility: hidden;
+				display: none;
+			}
+ 			@media screen and (orientation:portrait) {
+				 /*add warning*/
+				 .portrait-mode {
+					 display: block;
+					 visibility: visible;
+					 color: red;
+					 text-shadow:  1px 1px white;
+				 }
+			 }
+
+			@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+				.middle {
+					position:  relative !important;
+					color: white !important;
+					opacity: 1;
+					text-shadow:  2px 2px black !important;
+					text-align: center !important;
+					border: none !important;
+					background-color: transparent !important;
+				}
+				.bottom-left {
+					color: black;
+					text-shadow:  2px 2px white;
+					text-align: left;
+					border: solid white;
+					background-color: beige;
+				}
+				.bottom-right {
+					color: black;
+					text-shadow:  2px 2px white;
+					text-align: right;
+					border: solid white;
+				}
+				div {
+					font-size: 120% !important;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image='./images/01.JPG'>
-					<div class="text-white">Welcome</div>
-					<div class="text-white">to</div>
-					<div class="text-white">Miami Creek at the gateway to Yosemite</div>
+				<section data-background-image='./images/20.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left middle">
+					<div>Welcome</div>
+					<div>to</div>
+					<div>Miami Creek Retreat</div>
+					</div>
 				</section>
+				<section data-background-image='./images/18.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left">
+						<div>Spacious 2000+ square feet</div>
+						<div>3 bedrooms cottage</div>
+					</div> -->
+				</section>
+				<section data-background-image='./images/08.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>high vaulted ceiling</div><div>great room</div></div> -->
+				</section>
+				<section data-background-image='./images/09.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>hangout bar</div> -->
+				</section>
+				<section data-background-image='./images/10.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/11.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/12.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/13.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/14.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/15.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/16.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<section data-background-image='./images/17.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<!-- <div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div></div> -->
+				</section>
+				<!-- <section data-background-image='./images/18.JPG'> -->
+					<!-- <div class="bottom-left"><div>spacious patio</div> -->
+				<!-- </section> -->
+				<!-- <section data-background-image='./images/19.JPG'> -->
+					<!-- <div class="bottom-left"><div>view of the creek</div><div>from the patio</div></div> -->
+				<!-- </section> -->
+				<!-- <section data-background-image='./images/20.JPG'> -->
+					<!-- <div class="bottom-left"><div>year-round creek</div><div>runs through the property</div></div> -->
+				<!-- </section> -->
 				<section data-background-image='./images/02.JPG'>
-					<div class="text-white" style="margin-top:-25%;">14 miles to Yosemite Park Entrance</div>
-				</section>
-				<section data-background-image='./images/04.JPG'>
-					<div class="text-white" style="margin-top: 30%;">7 miles to Bass Lake</div>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left"><div>14 miles</div> <div>to Yosemite Park Entrance</div><div><a href="https://www.nps.gov/yose/index.htm" target="new">more info</a></div></div>
 				</section>
 				<section data-background-image='./images/03.JPG'>
-					<div class="text-white" style="margin-top: 50%;">6 miles to downtown Oakhurst</div>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left"><div>7 miles</div><div>to Bass Lake</div><div><a href="www.visitcalifornia.com/attraction/bass-lake" target="new">more info</a></div></div>
 				</section>
-				<section data-background-image='./images/03a.JPG'>
-					<div class="text-white" style="margin-top: 50%;">18 miles to Chukchansi Gold Resort &amp; Casino</div>
+				<section data-background-image='./images/04.JPG'>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left"><div>6 miles</div><div>to downtown Oakhurst</div><div><a href="https://oakhurstchamber.com/about/visitor-info/" target="new">more info</a></div></div>
 				</section>
-				<section data-background-image='./images/03b.JPG'>
-					<div class="text-yellow" style="margin-top: 10%;">55 miles to Freshno Chaffee Zoo</div>
-				</section>
-				<section>
 				<section data-background-image='./images/05.JPG'>
-					<div class="text-white" style="margin-top: 30%;">year-round creek runs through the property</div>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left"><div>18 miles</div><div>to Chukchansi Gold Resort &amp; Casino</div><div><a href="https://chukchansigold.com/" target="new">more info</a></div></div>
 				</section>
 				<section data-background-image='./images/06.JPG'>
-					<div class="text-white" style="margin-top: 30%;">year-round creek right in the backyard</div>
+					<div class="portrait-mode">best viewed in landscape mode</div>
+					<div class="bottom-left"><div>55 miles</div><div>to Fresno Chaffee Zoo</div><div><a href="https://fresnochaffeezoo.org/" target="new">more info</a></div></div>
+				</section>
+				<section data-background-image='./images/21.JPG'>
+					<div class="text-white">interested in booking?</div>
+					<div><a style="color:white;" href="mailto:thegatewaytoyosemite@gmail.com?Subject=Booking%20Inquiry">send email</a></div>
 				</section>
 			</section>	
-			
-			<section data-background-image='./images/07.JPG'>
-				<div style="margin-top: 30%;">
-				<div class="text-white">Spacious 2000+ sqft</div>
-				<div class="text-white">3 bedrooms cottage</div>
-				</div>
-			</section>
-				<!--
-			<section data-background-image='./images/08.JPG'>
-				<div class="text-white" style="margin-top: 30%;">large family room</div>
-			</section>
-			<section data-background-image='./images/09.JPG'>
-				<div class="text-white" style="margin-top: 30%;">dining room with creek view</div>
-			</section>
-			<section data-background-image='./images/10.JPG'>
-				<div class="text-white" style="margin-top: 30%;">spacious master bedroom with King size bed</div>
-			</section>
--->
 			</div>
 		</div>
 		<script src="lib/js/head.min.js"></script>
